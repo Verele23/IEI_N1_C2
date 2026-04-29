@@ -2,7 +2,16 @@
 
 lista_juegos = ['Dota 2','CS2','Plantas V/S Zombies','Expedition 33']
 lista_numeros = [1,5,89,42,63]
+nombre = 'Aquiles Baeza'
 
+for letra in nombre:
+    if letra == 'a': 
+        letra = letra.upper()
+    if letra == ' ':
+        letra = '-'
+    print(letra)
+
+print()
 for elemento in lista_juegos:
     elemento = elemento.upper()
     print(elemento)
@@ -39,3 +48,25 @@ for elemento in diccionario_asignaturas.items():
 print()
 for elemento in diccionario_asignaturas.items():
     print(elemento[1])
+
+# range es un metodo que crea un rango de numero
+# si a range le paso 1 argumento, crea un rango de numeros con esa cantidad de elementos
+lista_numeros_rango = range(5)
+print()
+print(lista_numeros_rango)
+for numero in lista_numeros_rango:
+    print(numero)
+
+# si a range le paso 2 argumentos, el primero sera el numero inicial y el segundo el final -1
+lista_numeros_rango2 = range(5,26)
+print()
+print(lista_numeros_rango2)
+for numero in lista_numeros_rango2:
+    print(numero)
+
+# si a range le paso 2 argumentos, el primero sera el numero inicial, el segundo el final -1 y el tercero sera el paso, cada cuanto aumento el siguiente numero
+lista_numeros_rango3 = range(5,26,5)
+print()
+print(lista_numeros_rango3)
+for numero in lista_numeros_rango3:
+    print(numero)
